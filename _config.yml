@@ -1,0 +1,52 @@
+# Build settings
+permalink: /blog/:year/:title/
+markdown: kramdown
+highlighter: pygments
+plugins: [jekyll-paginate-v2]
+
+pagination:
+  enabled: true
+  per_page: 3
+  permalink: "/page/:num/"
+
+comments: true
+
+source: source
+destination: _site
+sass:
+  sass_dir: _sass
+  style: compressed # expanded
+
+# SEO settings
+title: mhorlacher
+description: "Data Scientist and Software Developer"
+keywords: "data science, machine learning, software developement, deep learning, R, Python"
+url: http://mhorlacher.github.io
+baseurl: "https://mhorlacher.github.io/"
+
+google_analytics: None
+repo: https://github.com/mhorlacher/beautiful-data
+disqus_shortname: "mhorlacher"
+disqus_site_shortname: "mhorlacher"
+
+# Author settings
+author:
+  name: Marc Horlacher
+  job: Bioinformatics PhD Student
+  bio: "Data Scientist with a passion for Software developement, long-time R and Python Programmer and Tech Enthusiast."
+  thumb: /images/author.jpg
+  email: marc.horlacher@gmail.com
+  url: https://mhorlacher.github.io/
+  github: https://github.com/mhorlacher
+  twitter: https://twitter.com/marc_horlacher
+  facebook: None
+  linkedin: https://www.linkedin.com/in/marc-horlacher-45185b158/
+
+# navbar pages
+navbar:
+  - slug: about
+    title: About
+  - slug: blog
+    title: Blog
+
+exclude: ["config.rb", "src", "Gemfile", "Gemfile.lock", "package.json","README.md", "Rakefile"]
